@@ -1,0 +1,92 @@
+.column {
+    position: absolute;
+    width: calc(100vw/6);
+    height: 100vh;
+    top: -100vh;
+    animation: slide-down 1s forwards 1;
+}
+
+.column img {
+    position: absolute;
+    bottom: 15vh;
+    left: 0px;
+}
+
+.label {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 9vw;
+    color: white;
+    text-align: center;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#col1{
+    background-color: var(--bar1);
+    left: calc((100vw/6)*0);
+    animation-delay: 0s;
+}
+
+#col1:hover{
+    background-color: var(--bar1_acc);
+}
+
+#col2{
+    background-color: var(--bar2);
+    left: calc((100vw/6)*1);
+    animation-delay: 0.5s;
+}
+
+#col2:hover{
+    background-color: var(--bar2_acc);
+}
+
+#col3{
+    background-color: var(--bar3);
+    left: calc((100vw/6)*2);
+    animation-delay: 1s;
+}
+
+#col3:hover{
+    background-color: var(--bar3_acc);
+}
+
+#col4{
+    background-color: var(--bar4);
+    left: calc((100vw/6)*3);
+    animation-delay: 1.5s;
+}
+
+#col4:hover{
+    background-color: var(--bar4_acc);
+}
+
+#col5{
+    background-color: var(--bar5);
+    left: calc((100vw/6)*4);
+    animation-delay: 2s;
+}
+
+#col5:hover{
+    background-color: var(--bar5_acc);
+}
+
+#col6{
+    background-color: var(--bar6);
+    left: calc((100vw/6)*5);
+    animation-delay: 2.5s;
+}
+
+#col6:hover{
+    background-color: var(--bar6_acc);
+}
+
+@keyframes slide-down {
+    100% { top: 0px; }
+}

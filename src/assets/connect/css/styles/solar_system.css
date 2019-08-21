@@ -1,0 +1,404 @@
+.desktop-version{
+    /* Animation Variables */
+    --center_size: 12vmin;
+    --border_size: calc(.45 * var(--center_size));
+    --base-speed: 10s;
+    --ripple-speed: 2s;
+    --ripple-seperation: 0.25s;
+
+    /* Pre-Execution Calculations */
+    --o1_ripple_delay: calc(0*var(--ripple-seperation));
+    --o2_ripple_delay: calc(1*var(--ripple-seperation));
+    --o3_ripple_delay: calc(2*var(--ripple-seperation));
+    --o4_ripple_delay: calc(3*var(--ripple-seperation));
+    --o5_ripple_delay: calc(4*var(--ripple-seperation));
+    --o6_ripple_delay: calc(5*var(--ripple-seperation));
+
+    --o1_size: calc(2*var(--center_size));
+    --o2_size: calc(3*var(--center_size));
+    --o3_size: calc(4*var(--center_size));
+    --o4_size: calc(5*var(--center_size));
+    --o5_size: calc(6*var(--center_size));
+    --o6_size: calc(7*var(--center_size));
+    
+    --p1_speed: calc(var(--base-speed));
+    --p2_speed: calc(10s + var(--base-speed));
+    --p3_speed: calc(5s + var(--base-speed));
+    --p4_speed: calc(4s + var(--base-speed));
+    --p5_speed: calc(6s + var(--base-speed));
+    --p6_speed: calc(8s + var(--base-speed));
+
+    --p1_fade_speed: calc(var(--ripple-speed) + var(--o1_ripple_delay) * 2 );
+    --p2_fade_speed: calc(var(--ripple-speed) + var(--o2_ripple_delay) * 2 );
+    --p3_fade_speed: calc(var(--ripple-speed) + var(--o3_ripple_delay) * 2 );
+    --p4_fade_speed: calc(var(--ripple-speed) + var(--o4_ripple_delay) * 2 );
+    --p5_fade_speed: calc(var(--ripple-speed) + var(--o5_ripple_delay) * 2 );
+    --p6_fade_speed: calc(var(--ripple-speed) + var(--o6_ripple_delay) * 2 );
+}
+
+/* Classes */
+.centered 
+{
+    position: absolute;
+    top: calc(50% + var(--header_height));
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.planet
+{
+    margin-top: calc(-0.5 * var(--border_size));
+    margin-left: calc(-0.5 * var(--border_size));
+    background-size: contain;
+    cursor:pointer;
+}
+
+.ring {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background: transparent;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+    border: var(--border_size) solid transparent;
+}
+
+/* Center of Orbit Specifications */
+#center {
+    width: calc(var(--center_size)*1.5);
+    height: calc(var(--center_size)*1.5);
+    z-index: 11;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: url(assets/connect/assets/JulianLogo.svg);
+    background-size: contain;
+    border: 0px solid transparent;
+}
+
+#center:hover ~ #orbit1 {
+    border: var(--border_size) solid var(--o1_color);
+}
+#center:hover ~ #orbit2 {
+    border: var(--border_size) solid var(--o2_color);
+}
+#center:hover ~ #orbit3 {
+    border: var(--border_size) solid var(--o3_color);
+}
+#center:hover ~ #orbit4 {
+    border: var(--border_size) solid var(--o4_color);
+}
+#center:hover ~ #orbit5{
+    border: var(--border_size) solid var(--o5_color);
+}
+#center:hover ~ #orbit6 {
+    border: var(--border_size) solid var(--o6_color);
+}
+
+#center:hover ~ #planet1 {
+    animation-play-state: paused;
+}
+#center:hover ~ #planet2 {
+    animation-play-state: paused;
+}
+#center:hover ~ #planet3 {
+    animation-play-state: paused;
+}
+#center:hover ~ #planet4 {
+    animation-play-state: paused;
+}
+#center:hover ~ #planet5{
+    animation-play-state: paused;
+}
+#center:hover ~ #planet6 {
+    animation-play-state: paused;
+}
+
+/* Orbit Ring Specifications */
+#orbit1 {
+    width: var(--o1_size);
+    height: var(--o1_size);
+    z-index: 10;
+    animation: welcome_o1 var(--ripple-speed) 1;
+    animation-delay: var(--o1_ripple_delay);
+}
+
+#orbit1:hover {
+    border: var(--border_size) solid var(--o1_color);
+}
+
+#orbit2 {
+    width: var(--o2_size);
+    height: var(--o2_size);
+    z-index: 9;
+    animation: welcome_o2 var(--ripple-speed) 1;
+    animation-delay: var(--o2_ripple_delay);
+}
+
+#orbit2:hover {
+    border: var(--border_size) solid var(--o2_color);
+}
+
+#orbit3 {
+    width: var(--o3_size);
+    height: var(--o3_size);
+    z-index: 8;
+    animation: welcome_o3 var(--ripple-speed) 1;
+    animation-delay: var(--o3_ripple_delay);
+}
+
+#orbit3:hover {
+    border: var(--border_size) solid var(--o3_color);
+}
+
+#orbit4 {
+    width: var(--o4_size);
+    height: var(--o4_size);
+    z-index: 7;
+    animation: welcome_o4 var(--ripple-speed) 1;
+    animation-delay: var(--o4_ripple_delay);
+}
+
+#orbit4:hover {
+    border: var(--border_size) solid var(--o4_color);
+}
+
+#orbit5 {
+    width: var(--o5_size);
+    height: var(--o5_size);
+    z-index: 6;
+    animation: welcome_o5 var(--ripple-speed) 1;
+    animation-delay: var(--o5_ripple_delay);
+}
+
+#orbit5:hover {
+    border: var(--border_size) solid var(--o5_color);
+}
+
+#orbit6 {
+    width: var(--o6_size);
+    height: var(--o6_size);
+    z-index: 5;
+    animation: welcome_o6 var(--ripple-speed) 1;
+    animation-delay: var(--o6_ripple_delay);
+}
+
+#orbit6:hover {
+    border: var(--border_size) solid var(--o6_color);
+}
+
+/* Orbit Rings Welcome Ripple Animation */
+@keyframes welcome_o1 {
+    0%{
+        border: var(--border_size) solid transparent;
+    }
+    50%{
+        border: var(--border_size) solid var(--o1_color);
+    }
+    100%{
+        border: var(--border_size) solid transparent;
+    }
+}
+
+@keyframes welcome_o2 {
+    0%{
+        border: var(--border_size) solid transparent;
+    }
+    50%{
+        border: var(--border_size) solid var(--o2_color);
+    }
+    100%{
+        border: var(--border_size) solid transparent;
+    }
+}
+
+@keyframes welcome_o3 {
+    0%{
+        border: var(--border_size) solid transparent;
+    }
+    50%{
+        border: var(--border_size) solid var(--o3_color);
+    }
+    100%{
+        border: var(--border_size) solid transparent;
+    }
+}
+
+@keyframes welcome_o4 {
+    0%{
+        border: var(--border_size) solid transparent;
+    }
+    50%{
+        border: var(--border_size) solid var(--o4_color);
+    }
+    100%{
+        border: var(--border_size) solid transparent;
+    }
+}
+
+@keyframes welcome_o5 {
+    0%{
+        border: var(--border_size) solid transparent;
+    }
+    50%{
+        border: var(--border_size) solid var(--o5_color);
+    }
+    100%{
+        border: var(--border_size) solid transparent;
+    }
+}
+
+@keyframes welcome_o6 {
+    0%{
+        border: var(--border_size) solid transparent;
+    }
+    50%{
+        border: var(--border_size) solid var(--o6_color);
+    }
+    100%{
+        border: var(--border_size) solid transparent;
+    }
+}
+
+/* Planet Specifications */
+#planet1 {
+    width: var(--border_size);
+    height: var(--border_size);
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background: url(assets/connect/assets/social_logos/yelp.svg);
+    background-color: var(--p1_color);
+    z-index: 11;
+    animation: orbit_p1 var(--p1_speed) linear infinite, fade_in var(--p1_fade_speed) linear 1;
+}
+
+#planet1:hover{
+    animation-play-state: paused;
+}
+
+#planet2 {
+    width: var(--border_size);
+    height: var(--border_size);
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background: url(assets/connect/assets/social_logos/instagram.svg);
+    background-color: var(--p2_color);
+    z-index: 11;
+    animation: orbit_p2 var(--p2_speed) linear infinite, fade_in var(--p2_fade_speed) linear 1;
+}
+
+#planet2:hover{
+    animation-play-state: paused;
+}
+
+#planet3 {
+    width: var(--border_size);
+    height: var(--border_size);
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background: url(assets/connect/assets/social_logos/github.svg);
+    background-color: var(--p3_color);
+    z-index: 11;
+    animation: orbit_p3 var(--p3_speed) linear infinite, fade_in var(--p3_fade_speed) linear 1;
+}
+
+#planet3:hover{
+    animation-play-state: paused;
+}
+
+#planet4 {
+    width: var(--border_size);
+    height: var(--border_size);
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background: url(assets/connect/assets/social_logos/linkedin.svg);
+    background-color: var(--p4_color);
+    z-index: 11;
+    animation: orbit_p4 var(--p4_speed) linear infinite, fade_in var(--p4_fade_speed) linear 1;
+}
+
+#planet4:hover{
+    animation-play-state: paused;
+}
+
+#planet5 {
+    width: var(--border_size);
+    height: var(--border_size);
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background: url(assets/connect/assets/social_logos/youtube.svg);
+    background-color: var(--p5_color);
+    background-size: contain;
+    z-index: 11;
+    animation: orbit_p5 var(--p5_speed) linear infinite, fade_in var(--p5_fade_speed) linear 1;
+}
+
+#planet5:hover{
+    animation-play-state: paused;
+}
+
+#planet6 {
+    width: var(--border_size);
+    height: var(--border_size);
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background: url(assets/connect/assets/social_logos/twitter.svg);
+    background-color: var(--p6_color);
+    z-index: 11;
+    animation: orbit_p6 var(--p6_speed) linear infinite, fade_in var(--p6_fade_speed) linear 1;
+}
+
+#planet6:hover{
+    animation-play-state: paused;
+}
+
+/* Planet Orbit Animations */
+@keyframes orbit_p1 {
+    from { transform: rotate(180deg) translateX(calc(calc(var(--border_size)/2) + calc(var(--o1_size)/2))) rotate(-180deg); }
+    to   { transform: rotate(-180deg) translateX(calc(calc(var(--border_size)/2) + calc(var(--o1_size)/2))) rotate(180deg); }
+}
+
+@keyframes orbit_p2 {
+    from { transform: rotate(180deg) translateX(calc(calc(var(--border_size)/2) + calc(var(--o2_size)/2))) rotate(-180deg); }
+    to   { transform: rotate(-180deg) translateX(calc(calc(var(--border_size)/2) + calc(var(--o2_size)/2))) rotate(180deg); }
+}
+
+@keyframes orbit_p3 {
+    from { transform: rotate(180deg) translateX(calc(calc(var(--border_size)/2) + calc(var(--o3_size)/2))) rotate(-180deg); }
+    to   { transform: rotate(-180deg) translateX(calc(calc(var(--border_size)/2) + calc(var(--o3_size)/2))) rotate(180deg); }
+}
+
+@keyframes orbit_p4 {
+    from { transform: rotate(0deg) translateX(calc(calc(var(--border_size)/2) + calc(var(--o4_size)/2))) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(calc(calc(var(--border_size)/2) + calc(var(--o4_size)/2))) rotate(-360deg); }
+}
+
+@keyframes orbit_p5 {
+    from { transform: rotate(0deg) translateX(calc(calc(var(--border_size)/2) + calc(var(--o5_size)/2))) rotate(0deg); }
+    to   { transform: rotate(-360deg) translateX(calc(calc(var(--border_size)/2) + calc(var(--o5_size)/2))) rotate(360deg); }
+}
+
+@keyframes orbit_p6 {
+    from { transform: rotate(0deg) translateX(calc(calc(var(--border_size)/2) + calc(var(--o6_size)/2))) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(calc(calc(var(--border_size)/2) + calc(var(--o6_size)/2))) rotate(-360deg); }
+}
+
+@keyframes fade_in {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

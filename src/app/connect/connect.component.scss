@@ -1,0 +1,19 @@
+.theme-pride {
+    --header_height: 0vh;
+}
+
+/* Media Switcher */
+.desktop-version
+{
+    display: none;
+}
+.mobile-version
+{
+    display: block;
+    background: var(--background);
+}
+
+@media only screen and (min-device-width: 768px) {
+    .mobile-version {display:none;}
+    .desktop-version {display:block;}
+}

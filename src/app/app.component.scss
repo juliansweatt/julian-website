@@ -1,0 +1,18 @@
+@import '~@angular/material/theming';
+
+.mat-card-title
+{
+    font-size: 30pt;
+}
+
+@mixin main-card-theme($theme) {
+    .mainCard
+    {
+        background-color: mat-color(map-get($theme, accent), 50);
+    }
+
+    .dark
+    {
+        background-color: mat-color(map-get($theme, accent), 900);
+    }
+}
