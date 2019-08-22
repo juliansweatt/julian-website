@@ -17,5 +17,4 @@ export class HeaderBarComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

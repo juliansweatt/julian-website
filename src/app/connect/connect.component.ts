@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-connect',
   templateUrl: './connect.component.html',
-  styleUrls: ['./connect.component.scss']
+  styleUrls: ['./connect.component.scss', './connect.component.color-bars.scss', './connect.component.solar-system.scss']
 })
 export class ConnectComponent implements OnInit {
 
