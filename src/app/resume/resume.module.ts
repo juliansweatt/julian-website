@@ -19,11 +19,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ConnectComponent } from './components/connect/connect.component'
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { ThemeSelectorComponent } from './components/theme-selector/theme-selector.component';
-import { HeaderBarComponent } from './components/header-bar/header-bar.component';
 import { JsonImportService } from './services/json-import.service';
-import { ThemeControlService } from './services/theme-control.service';
-
 import { NgModule } from '@angular/core';
 import { ResumeComponent } from './resume.component';
 
@@ -34,8 +30,6 @@ import { ResumeComponent } from './resume.component';
     SkillsComponent,
     ConnectComponent,
     ProjectsComponent,
-    ThemeSelectorComponent,
-    HeaderBarComponent,
     ResumeComponent
   ],
   imports: [
@@ -53,7 +47,7 @@ import { ResumeComponent } from './resume.component';
     HttpClientModule,
     MatMenuModule
   ],
-  providers: [ JsonImportService, ThemeControlService ],
+  providers: [ JsonImportService ],
   bootstrap: [],
 })
 export class ResumeModule { }

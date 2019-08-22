@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { JsonImportService } from './services/json-import.service';
-import { ThemeControlService } from './services/theme-control.service';
+import { ThemeControlService } from '../services/theme-control.service';
 import { OverlayContainer } from '@angular/cdk/overlay';
 
 export class date

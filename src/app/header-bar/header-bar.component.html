@@ -1,0 +1,11 @@
+<span [class]="currentTheme">
+  <mat-toolbar color="primary" style="position: sticky; position: -webkit-sticky; top: 0; z-index: 1000;">
+    <mat-toolbar-row>
+      <img [routerLink]="[ '/home' ]" matTooltip="Julian Sweatt" src="assets/j_light.png" align-height="50px" width="50px" class="text-center">
+      <button [routerLink]="[ '/connect' ]" color=accent mat-button>Connect</button>
+      <button [routerLink]="[ '/resume' ]" color=accent mat-button>Resumé</button>
+      <span class="spacer"></span>
+      <theme-selector></theme-selector>
+    </mat-toolbar-row>
+  </mat-toolbar> 
+</span>

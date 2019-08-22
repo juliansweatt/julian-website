@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ThemeControlService } from '../../services/theme-control.service';
+import { ThemeControlService } from '../services/theme-control.service';
 
 @Component({
   selector: 'theme-selector',

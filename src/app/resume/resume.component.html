@@ -1,7 +1,5 @@
 <span [class]="currentTheme">
-  <span *ngIf="ready; else loading">
-      <header-bar></header-bar>
-  
+  <span *ngIf="ready; else loading">  
       <mat-card class="mainCard" [ngClass]="{'dark':isDark}">
         <mat-card-title>
           Education

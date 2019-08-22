@@ -19,16 +19,24 @@ import {
 import { ResumeComponent } from './resume/resume.component';
 import { ResumeModule } from './resume/resume.module';
 import { ConnectComponent } from './connect/connect.component';
+import { ThemeSelectorComponent } from './theme-selector/theme-selector.component';
+import { HeaderBarComponent } from './header-bar/header-bar.component';
+import { ThemeControlService } from './services/theme-control.service';
+
 
 const appRoutes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'resume', component: ResumeComponent },
-  { path: 'connect', component: ConnectComponent }
+  { path: 'connect', component: ConnectComponent },
+  { path: 'home', component: ConnectComponent },
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     ConnectComponent,
+    ThemeSelectorComponent,
+    HeaderBarComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -36,9 +44,19 @@ const appRoutes: Routes = [
     ),
     BrowserModule,
     BrowserAnimationsModule,
+    MatIconModule,
+    MatCardModule,
+    MatListModule,
+    MatButtonModule,
+    MatGridListModule,
+    MatButtonToggleModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatProgressSpinnerModule,
+    MatMenuModule,
     ResumeModule
   ],
-  providers: [],
+  providers: [ThemeControlService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
