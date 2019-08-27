@@ -1,10 +1,10 @@
-:root {
+.valentine {
     /* Theme Colors */
     --background: white;
     --accent: rgb(210, 0, 0);
-    --primary: rgb(0, 0, 200);
-    --accent_acc:rgb(213, 46, 46);
-    --primary_acc:rgb(60, 60, 196);
+    --primary: rgb(255, 95, 95);
+    --accent_acc:rgb(208, 81, 81);
+    --primary_acc:rgb(255, 163, 163);
 
     /* Social Media Orbit Colors */
     --o1_color: var(--primary);

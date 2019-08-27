@@ -3,11 +3,20 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-connect',
   templateUrl: './connect.component.html',
-  styleUrls: ['./connect.component.scss', './connect.component.color-bars.scss', './connect.component.solar-system.scss']
+  styleUrls: ['./connect.component.scss',
+    './connect.component.color-bars.scss',
+    './connect.component.solar-system.scss',
+    './themes/christmas.css',
+    './themes/halloween.css',
+    './themes/independence.css',
+    './themes/monochrome_dark.css',
+    './themes/monochrome_light.css',
+    './themes/pride.css',
+    './themes/valentine.css']
 })
 export class ConnectComponent implements OnInit {
 
-  themes = [
+  public themes = [
     "christmas", 
     "halloween", 
     "independence", 
@@ -17,28 +26,32 @@ export class ConnectComponent implements OnInit {
     "valentine"
   ];
 
-  currentTheme = "pride";
+  private defaultTheme = "pride";
 
-  constructor() {
+  public currentTheme = this.defaultTheme;
+  private themedElement;
+
+  public constructor() {
   }
 
-  ngOnInit() {
+  public ngOnInit() {
     this.initialize();
   } 
 
-  setTheme(newTheme)
+  public setTheme(newTheme)
   {
-    // document.getElementById('theme').href = ("assets/connect/css/themes/" + newTheme + ".css");
+    console.log("Change theme", newTheme);
     this.currentTheme = newTheme;
-    console.log("Theme altered",newTheme);
+    this.themedElement.className = newTheme;
   }
 
-  initialize()
+  private initialize()
   {
-    console.log("Start");
     let d = new Date()
     let currentMonth = d.getMonth();
     let currentDate = d.getDate();
+    
+    this.themedElement = document.getElementById("css-theme-control");
 
     /***** Theme Months *****/
     if(currentMonth == 0)
@@ -90,12 +103,13 @@ export class ConnectComponent implements OnInit {
     }
     else {
       /* Default */
-      this.setTheme("pride");
+      this.setTheme(this.defaultTheme);
     }
   }
 
-  nextTheme()
+  public nextTheme()
   {
+    console.log("Thank you next");
     let currentIndex = this.themes.indexOf(this.currentTheme);
 
     if( currentIndex < this.themes.length-1 )
@@ -107,5 +121,4 @@ export class ConnectComponent implements OnInit {
       this.setTheme(this.themes[0]);
     }
   }
-
 }
