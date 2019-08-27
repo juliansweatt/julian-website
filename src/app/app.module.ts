@@ -22,6 +22,8 @@ import { ConnectComponent } from './connect/connect.component';
 import { ThemeSelectorComponent } from './theme-selector/theme-selector.component';
 import { HeaderBarComponent } from './header-bar/header-bar.component';
 import { ThemeControlService } from './services/theme-control.service';
+import { BlogComponent } from './blog/blog.component';
+import { BlogModule } from './blog/blog.module';
 
 
 const appRoutes: Routes = [
@@ -29,6 +31,7 @@ const appRoutes: Routes = [
   { path: 'resume', component: ResumeComponent },
   { path: 'connect', component: ConnectComponent },
   { path: 'home', component: ConnectComponent },
+  { path: 'blog', component: BlogComponent }
 ];
 
 @NgModule({
@@ -54,7 +57,8 @@ const appRoutes: Routes = [
     MatTooltipModule,
     MatProgressSpinnerModule,
     MatMenuModule,
-    ResumeModule
+    ResumeModule,
+    BlogModule
   ],
   providers: [ThemeControlService],
   bootstrap: [AppComponent]

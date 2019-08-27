@@ -3,6 +3,7 @@
   <mat-toolbar class="desktop" color="primary" style="position: sticky; position: -webkit-sticky; top: 0; z-index: 1000;">
   <mat-toolbar-row>
       <img [routerLink]="[ '/home' ]" matTooltip="Julian Sweatt" src="assets/j_light.png" align-height="50px" width="50px" class="text-center">
+      <button [routerLink]="[ '/blog' ]" color=accent mat-button>Blog</button>
       <button [routerLink]="[ '/connect' ]" color=accent mat-button>Connect</button>
       <button [routerLink]="[ '/resume' ]" color=accent mat-button>Resumé</button>
       <span class="spacer"></span>
@@ -29,6 +30,10 @@
   <button mat-menu-item [routerLink]="[ '/home' ]">
     <mat-icon>home</mat-icon>
     <span>Home</span>
+  </button>
+  <button mat-menu-item [routerLink]="[ '/blog' ]">
+    <mat-icon>web</mat-icon>
+    <span>Blog</span>
   </button>
   <button mat-menu-item [routerLink]="[ '/connect' ]">
     <mat-icon>share</mat-icon>

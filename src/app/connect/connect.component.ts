@@ -34,7 +34,6 @@ export class ConnectComponent implements OnInit {
 
   public setTheme(newTheme)
   {
-    console.log("Change theme", newTheme);
     this.currentTheme = newTheme;
     this.themedElement.className = newTheme;
   }
@@ -103,7 +102,6 @@ export class ConnectComponent implements OnInit {
 
   public nextTheme()
   {
-    console.log("Thank you next");
     let currentIndex = this.themes.indexOf(this.currentTheme);
 
     if( currentIndex < this.themes.length-1 )
