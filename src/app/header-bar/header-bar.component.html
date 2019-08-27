@@ -1,6 +1,7 @@
+<!-- Desktop Header Bar -->
 <span [class]="currentTheme">
-  <mat-toolbar color="primary" style="position: sticky; position: -webkit-sticky; top: 0; z-index: 1000;">
-    <mat-toolbar-row>
+  <mat-toolbar class="desktop" color="primary" style="position: sticky; position: -webkit-sticky; top: 0; z-index: 1000;">
+  <mat-toolbar-row>
       <img [routerLink]="[ '/home' ]" matTooltip="Julian Sweatt" src="assets/j_light.png" align-height="50px" width="50px" class="text-center">
       <button [routerLink]="[ '/connect' ]" color=accent mat-button>Connect</button>
       <button [routerLink]="[ '/resume' ]" color=accent mat-button>Resumé</button>
@@ -9,3 +10,36 @@
     </mat-toolbar-row>
   </mat-toolbar> 
 </span>
+
+<!-- Mobile Header-Bar -->
+<span [class]="currentTheme">
+  <mat-toolbar class="mobile" color="primary" style="position: sticky; position: -webkit-sticky; top: 0; z-index: 1000;">
+    <mat-toolbar-row>
+      <button mat-icon-button color="accent" [matMenuTriggerFor]="mobileMenu" aria-label="Navigation dropdown menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <img [routerLink]="[ '/home' ]" matTooltip="Julian Sweatt" src="assets/j_light.png" align-height="50px" width="50px" class="text-center" style="margin: 0 auto;">
+      <theme-selector></theme-selector>
+    </mat-toolbar-row>
+  </mat-toolbar> 
+</span>
+
+<!-- Mobile Hamburger Menu -->
+<mat-menu #mobileMenu="matMenu">
+  <button mat-menu-item [routerLink]="[ '/home' ]">
+    <mat-icon>home</mat-icon>
+    <span>Home</span>
+  </button>
+  <button mat-menu-item [routerLink]="[ '/connect' ]">
+    <mat-icon>share</mat-icon>
+    <span>Connect</span>
+  </button>
+  <button mat-menu-item [routerLink]="[ '/resume' ]">
+    <mat-icon>face</mat-icon>
+    <span>Resume</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon color="warn">menu_open</mat-icon>
+    <span>Close</span>
+  </button>
+</mat-menu>

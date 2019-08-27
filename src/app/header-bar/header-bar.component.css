@@ -4,3 +4,19 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Media Switcher */
+.desktop
+{
+    display: none;
+}
+
+.mobile
+{
+    display: block;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .mobile {display:none;}
+    .desktop {display:block;}
+}
