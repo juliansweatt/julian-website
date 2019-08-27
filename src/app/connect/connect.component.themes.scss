@@ -1,0 +1,303 @@
+.christmas {
+    /* Theme Colors */
+    --background: white;
+    --accent: rgb(0, 128, 0);
+    --primary: rgb(255, 0, 43);
+    --accent_acc: rgb(73, 154, 73);
+    --primary_acc: rgb(255, 62, 95);
+
+    /* Social Media Orbit Colors */
+    --o1_color: var(--primary);
+    --o2_color: var(--accent);
+    --o3_color: var(--primary);
+    --o4_color: var(--accent);
+    --o5_color: var(--primary);
+    --o6_color: var(--accent);
+
+    --p1_color: var(--accent);
+    --p2_color: var(--primary);
+    --p3_color: var(--accent);
+    --p4_color: var(--primary);
+    --p5_color: var(--accent);
+    --p6_color: var(--primary);
+
+    /* Social Media Color Bars */
+    --bar1: var(--primary);
+    --bar2: var(--accent);
+    --bar3: var(--primary);
+    --bar4: var(--accent);
+    --bar5: var(--primary);
+    --bar6: var(--accent);
+
+    --bar1_acc: var(--primary_acc);
+    --bar2_acc: var(--accent_acc);
+    --bar3_acc: var(--primary_acc);
+    --bar4_acc: var(--accent_acc);
+    --bar5_acc: var(--primary_acc);
+    --bar6_acc: var(--accent_acc);
+
+    /* Set Background */
+    background-color: var(--background);
+}
+
+.halloween {
+    /* Theme Colors */
+    --background: rgb(23, 23, 23);
+    --accent: black;
+    --primary: orange;
+    --accent_acc: rgb(50, 50, 50);
+    --primary_acc: rgb(255, 199, 95);
+
+    /* Social Media Orbit Colors */
+    --o1_color: var(--primary_acc);
+    --o2_color: var(--primary_acc);
+    --o3_color: var(--primary_acc);
+    --o4_color: var(--primary_acc);
+    --o5_color: var(--primary_acc);
+    --o6_color: var(--primary_acc);
+
+    --p1_color: var(--primary);
+    --p2_color: var(--primary);
+    --p3_color: var(--primary);
+    --p4_color: var(--primary);
+    --p5_color: var(--primary);
+    --p6_color: var(--primary);
+
+    /* Social Media Color Bars */
+    --bar1: var(--primary);
+    --bar2: var(--accent);
+    --bar3: var(--primary);
+    --bar4: var(--accent);
+    --bar5: var(--primary);
+    --bar6: var(--accent);
+
+    --bar1_acc: var(--primary_acc);
+    --bar2_acc: var(--accent_acc);
+    --bar3_acc: var(--primary_acc);
+    --bar4_acc: var(--accent_acc);
+    --bar5_acc: var(--primary_acc);
+    --bar6_acc: var(--accent_acc);
+
+    /* Set Background */
+    background-color: var(--background);
+}
+
+.independence {
+    /* Theme Colors */
+    --background: white;
+    --accent: rgb(210, 0, 0);
+    --primary: rgb(0, 0, 200);
+    --accent_acc:rgb(213, 46, 46);
+    --primary_acc:rgb(60, 60, 196);
+
+    /* Social Media Orbit Colors */
+    --o1_color: var(--primary);
+    --o2_color: var(--accent);
+    --o3_color: var(--primary);
+    --o4_color: var(--accent);
+    --o5_color: var(--primary);
+    --o6_color: var(--accent);
+
+    --p1_color: var(--accent);
+    --p2_color: var(--primary);
+    --p3_color: var(--accent);
+    --p4_color: var(--primary);
+    --p5_color: var(--accent);
+    --p6_color: var(--primary);
+
+    /* Social Media Color Bars */
+    --bar1: var(--primary);
+    --bar2: var(--accent);
+    --bar3: var(--primary);
+    --bar4: var(--accent);
+    --bar5: var(--primary);
+    --bar6: var(--accent);
+
+    --bar1_acc: var(--primary_acc);
+    --bar2_acc: var(--accent_acc);
+    --bar3_acc: var(--primary_acc);
+    --bar4_acc: var(--accent_acc);
+    --bar5_acc: var(--primary_acc);
+    --bar6_acc: var(--accent_acc);
+
+    /* Set Background */
+    background-color: var(--background);
+}
+
+.monochrome_dark {
+    /* Theme Colors */
+    --background: black;
+    --accent: grey;
+    --primary: white;
+    --accent_acc: rgb(67, 67, 67);
+    --background_acc: rgb(50, 50, 50);
+
+    /* Social Media Orbit Colors */
+    --o1_color: var(--primary);
+    --o2_color: var(--primary);
+    --o3_color: var(--primary);
+    --o4_color: var(--primary);
+    --o5_color: var(--primary);
+    --o6_color: var(--primary);
+
+    --p1_color: var(--accent);
+    --p2_color: var(--accent);
+    --p3_color: var(--accent);
+    --p4_color: var(--accent);
+    --p5_color: var(--accent);
+    --p6_color: var(--accent);
+
+    /* Social Media Color Bars */
+    --bar1: var(--background);
+    --bar2: var(--accent);
+    --bar3: var(--background);
+    --bar4: var(--accent);
+    --bar5: var(--background);
+    --bar6: var(--accent);
+
+    --bar1_acc: var(--background_acc);
+    --bar2_acc: var(--accent_acc);
+    --bar3_acc: var(--background_acc);
+    --bar4_acc: var(--accent_acc);
+    --bar5_acc: var(--background_acc);
+    --bar6_acc: var(--accent_acc);
+
+    /* Set Background */
+    background-color: var(--background);
+}
+
+.monochrome_light {
+    /* Theme Colors */
+    --background: white;
+    --accent: grey;
+    --primary: black;
+
+    --primary_bar: rgb(99, 99, 99);
+
+    /* Social Media Orbit Colors */
+    --o1_color: var(--primary);
+    --o2_color: var(--primary);
+    --o3_color: var(--primary);
+    --o4_color: var(--primary);
+    --o5_color: var(--primary);
+    --o6_color: var(--primary);
+
+    --p1_color: var(--primary);
+    --p2_color: var(--primary);
+    --p3_color: var(--primary);
+    --p4_color: var(--primary);
+    --p5_color: var(--primary);
+    --p6_color: var(--primary);
+
+    /* Social Media Color Bars */
+    --bar1: var(--accent);
+    --bar2: var(--primary_bar);
+    --bar3: var(--accent);
+    --bar4: var(--primary_bar);
+    --bar5: var(--accent);
+    --bar6: var(--primary_bar);
+
+    --bar1_acc: var(--primary);
+    --bar2_acc: var(--primary);
+    --bar3_acc: var(--primary);
+    --bar4_acc: var(--primary);
+    --bar5_acc: var(--primary);
+    --bar6_acc: var(--primary);
+
+    /* Set Background */
+    background-color: var(--background);
+}
+
+.pride {
+    /* Theme Colors */
+    --background: white;
+
+    --red: #FF4118;
+    --orange: #FF9618;
+    --green: #8BEB1C;
+    --teal: #1CEB96;
+    --blue: #1C53EB;
+    --purple: #8E1CEB;
+
+    --red_acc: #FF6868;
+    --orange_acc: #FFC25A;
+    --green_acc: #8FFF62;
+    --teal_acc: #A6FDFF;
+    --blue_acc: #849BFE;
+    --purple_acc: #C684FE;
+
+    /* Social Media Orbit Colors */
+    --o1_color: var(--red_acc);
+    --o2_color: var(--orange_acc);
+    --o3_color: var(--green_acc);
+    --o4_color: var(--teal_acc);
+    --o5_color: var(--blue_acc);
+    --o6_color: var(--purple_acc);
+
+    --p1_color: var(--red);
+    --p2_color: var(--orange);
+    --p3_color: var(--green);
+    --p4_color: var(--teal);
+    --p5_color: var(--blue);
+    --p6_color: var(--purple);
+
+    /* Social Media Color Bars */
+    --bar1: var(--red);
+    --bar2: var(--orange);
+    --bar3: var(--green);
+    --bar4: var(--teal);
+    --bar5: var(--blue);
+    --bar6: var(--purple);
+
+    --bar1_acc: var(--red_acc);;
+    --bar2_acc: var(--orange_acc);;
+    --bar3_acc: var(--green_acc);;
+    --bar4_acc: var(--teal_acc);;
+    --bar5_acc: var(--blue_acc);;
+    --bar6_acc: var(--purple_acc);;
+
+    /* Set Background */
+    background-color: var(--background);
+}
+
+.valentine {
+    /* Theme Colors */
+    --background: white;
+    --accent: rgb(210, 0, 0);
+    --primary: rgb(255, 95, 95);
+    --accent_acc:rgb(208, 81, 81);
+    --primary_acc:rgb(255, 163, 163);
+
+    /* Social Media Orbit Colors */
+    --o1_color: var(--primary);
+    --o2_color: var(--accent);
+    --o3_color: var(--primary);
+    --o4_color: var(--accent);
+    --o5_color: var(--primary);
+    --o6_color: var(--accent);
+
+    --p1_color: var(--accent);
+    --p2_color: var(--primary);
+    --p3_color: var(--accent);
+    --p4_color: var(--primary);
+    --p5_color: var(--accent);
+    --p6_color: var(--primary);
+
+    /* Social Media Color Bars */
+    --bar1: var(--primary);
+    --bar2: var(--accent);
+    --bar3: var(--primary);
+    --bar4: var(--accent);
+    --bar5: var(--primary);
+    --bar6: var(--accent);
+
+    --bar1_acc: var(--primary_acc);
+    --bar2_acc: var(--accent_acc);
+    --bar3_acc: var(--primary_acc);
+    --bar4_acc: var(--accent_acc);
+    --bar5_acc: var(--primary_acc);
+    --bar6_acc: var(--accent_acc);
+
+    /* Set Background */
+    background-color: var(--background);
+}

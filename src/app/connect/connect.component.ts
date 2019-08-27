@@ -6,13 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./connect.component.scss',
     './connect.component.color-bars.scss',
     './connect.component.solar-system.scss',
-    './themes/christmas.css',
-    './themes/halloween.css',
-    './themes/independence.css',
-    './themes/monochrome_dark.css',
-    './themes/monochrome_light.css',
-    './themes/pride.css',
-    './themes/valentine.css']
+    './connect.component.themes.scss']
 })
 export class ConnectComponent implements OnInit {
 
