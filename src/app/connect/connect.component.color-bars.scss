@@ -18,6 +18,8 @@
     font-size: 9vw;
     color: white;
     text-align: center;
+    position: relative;
+    top: 10vh;
 }
   
 /* Clear floats after the columns */
@@ -88,5 +90,5 @@
 }
 
 @keyframes slide-down {
-    100% { top: var(--header-height); }
+    100% { top: 0px }
 }
