@@ -3,18 +3,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { EducationComponent } from './components/education/education.component';
 import { EmploymentComponent } from './components/employment/employment.component';
-import { 
-  MatIconModule,
-  MatCardModule,
-  MatListModule,
-  MatButtonModule,
-  MatGridListModule,
-  MatButtonToggleModule,
-  MatToolbarModule,
-  MatTooltipModule,
-  MatProgressSpinnerModule,
-  MatMenuModule,
- } from "@angular/material";
+import { MatButtonModule } from "@angular/material/button";
+import { MatButtonToggleModule } from "@angular/material/button-toggle";
+import { MatCardModule } from "@angular/material/card";
+import { MatGridListModule } from "@angular/material/grid-list";
+import { MatIconModule } from "@angular/material/icon";
+import { MatListModule } from "@angular/material/list";
+import { MatMenuModule } from "@angular/material/menu";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatTooltipModule } from "@angular/material/tooltip";
 import { SkillsComponent } from './components/skills/skills.component';
 import { ConnectComponent } from './components/connect/connect.component'
 import { HttpClientModule } from '@angular/common/http';
