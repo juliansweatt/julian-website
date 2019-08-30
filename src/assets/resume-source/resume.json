@@ -15,8 +15,8 @@
             },
             "degree": "Computer Science B.S. & Computational Biology B.S.",
             "minor": "Mathematics",
-            "gpa": 3.03,
-            "location":{
+            "gpa": 3.09,
+            "location": {
                 "city": "Tallahassee",
                 "zipCode": null,
                 "state": "FL",
@@ -33,7 +33,13 @@
                 "Discrete Math I & II",
                 "Operating Systems",
                 "Programming Languages",
-                "Advanced Python"
+                "Advanced Python",
+                "Theory & Structure of Databases",
+                "Android Development",
+                "Computer & Network System Admin",
+                "Machine Learning",
+                "Theory of Computation",
+                "Software Engineering"
             ],
             "graduated": null,
             "important": true
@@ -64,6 +70,33 @@
         }
     ],
     "employment":[
+        {
+            "employer": "Citigroup",
+            "startDate": {
+                "month": 6,
+                "day": 0,
+                "year": 2019
+            },
+            "endDate": {
+                "month": 8,
+                "day": 0,
+                "year": 2019
+            },
+            "jobTitle": "Software Engineering Intern",
+            "location": {
+                "city": "Tampa",
+                "zipCode": null,
+                "state": "FL",
+                "country": null
+            },
+            "details": [
+                "Created a workforce management web app using AngularJS, Spring, and OracleDB which eliminated manual touch-points and increased data transparency",
+                "Implemented a synchronized data redundancy strategy to overcome dependance on Jira",
+                "Integrated web encryption for Exception Master Central web apps which secured business critical data",
+                "Led a knowledge transfer with the senior technical leadership to increase tool adoption"
+            ],
+            "important": true
+        },
         {
             "employer": "Rockwell Automation",
             "startDate": {
@@ -268,6 +301,11 @@
             "category": "Languages"
         },
         {
+            "name": "Angular JS",
+            "skillLevel": 2,
+            "category": "Languages"
+        },
+        {
             "name": "Type Script",
             "skillLevel": 3,
             "category": "Languages"
@@ -278,8 +316,13 @@
             "category": "Languages"
         },
         {
-            "name": "CSS",
+            "name": "CSS & SCSS",
             "skillLevel": 2,
+            "category": "Languages"
+        },
+        {
+            "name": "LESS",
+            "skillLevel": 1,
             "category": "Languages"
         },
         {
@@ -298,8 +341,13 @@
             "category": "Languages"
         },
         {
+            "name": "SQL",
+            "skillLevel": 3,
+            "category": "Languages"
+        },
+        {
             "name": "Agile Scrum",
-            "skillLevel": 1,
+            "skillLevel": 2,
             "category": "Misc"
         },
         {
@@ -318,23 +366,58 @@
             "category": "Misc"
         },
         {
+            "name": "Bit Bucket",
+            "skillLevel": 1,
+            "category": "Misc"
+        },
+        {
+            "name": "Team City",
+            "skillLevel": 1,
+            "category": "Misc"
+        },
+        {
             "name": "Rational Team Concert",
             "skillLevel": 1,
             "category": "Misc"
         },
         {
-            "name": "Jenkins CI",
+            "name": "Jenkins",
             "skillLevel": 1,
             "category": "Misc"
         },
         {
-            "name": "REST API",
+            "name": "REST",
             "skillLevel": 2,
             "category": "Misc"
         },
         {
             "name": "JSON",
             "skillLevel": 2,
+            "category": "Misc"
+        },
+        {
+            "name": "Spring Boot",
+            "skillLevel": 2,
+            "category": "Misc"
+        },
+        {
+            "name": "HTTPS",
+            "skillLevel": 1,
+            "category": "Misc"
+        },
+        {
+            "name": "Maven",
+            "skillLevel": 1,
+            "category": "Misc"
+        },
+        {
+            "name": "Jira",
+            "skillLevel": 2,
+            "category": "Misc"
+        },
+        {
+            "name": "Oracle DB",
+            "skillLevel": 1,
             "category": "Misc"
         },
         {
@@ -354,7 +437,7 @@
         },
         {
             "name": "Linux",
-            "skillLevel": 1,
+            "skillLevel": 2,
             "category": "Operating Systems"
         },
         {
@@ -368,18 +451,28 @@
             "category": "IDEs"
         },
         {
-            "name": "AutoCad",
-            "skillLevel": 2,
+            "name": "Auto Cad",
+            "skillLevel": 1,
             "category": "IDEs"
         },
         {
             "name": "Visual Studio",
+            "skillLevel": 3,
+            "category": "IDEs"
+        },
+        {
+            "name": "Android Studio",
             "skillLevel": 2,
             "category": "IDEs"
         },
         {
+            "name": "IntelliJ",
+            "skillLevel": 3,
+            "category": "IDEs"
+        },
+        {
             "name": "Logix",
-            "skillLevel": 2,
+            "skillLevel": 1,
             "category": "IDEs"
         },
         {
