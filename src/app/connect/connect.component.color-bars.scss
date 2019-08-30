@@ -4,6 +4,7 @@
     height: 100vh;
     top: -100vh;
     animation: slide-down 1s forwards 1;
+    z-index: 1;
 }
 
 .column img {
@@ -90,5 +91,5 @@
 }
 
 @keyframes slide-down {
-    100% { top: 0px }
+    100% { top: 6.5vh }
 }

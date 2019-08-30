@@ -4,7 +4,7 @@
   <mat-toolbar-row>
       <img [routerLink]="[ '/home' ]" matTooltip="Julian Sweatt" src="assets/j_light.png" align-height="50px" width="50px" class="text-center">
       <button [routerLink]="[ '/connect' ]" color=accent mat-button>Connect</button>
-      <button [routerLink]="[ '/resume' ]" color=accent mat-button>Resumé</button>
+      <button [routerLink]="[ '/resume' ]" color=accent mat-button>Résumé</button>
       <span class="spacer"></span>
       <theme-selector></theme-selector>
     </mat-toolbar-row>
@@ -13,7 +13,7 @@
 
 <!-- Mobile Header-Bar -->
 <span [class]="currentTheme">
-  <mat-toolbar class="mobile" color="primary" style="position: sticky; position: -webkit-sticky; top: 0; z-index: 1000;">
+  <mat-toolbar class="mobile" color="primary" style="position: sticky; position: -webkit-sticky; top: 0; z-index: 9999;">
     <mat-toolbar-row>
       <button mat-icon-button color="accent" [matMenuTriggerFor]="mobileMenu" aria-label="Navigation dropdown menu">
         <mat-icon>menu</mat-icon>
@@ -36,7 +36,7 @@
   </button>
   <button mat-menu-item [routerLink]="[ '/resume' ]">
     <mat-icon>face</mat-icon>
-    <span>Resume</span>
+    <span>Résumé</span>
   </button>
   <button mat-menu-item>
     <mat-icon color="warn">menu_open</mat-icon>
