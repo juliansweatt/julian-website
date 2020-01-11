@@ -34,7 +34,6 @@ export class ConnectComponent implements OnInit {
 
   public setTheme(newTheme)
   {
-    console.log("Change theme", newTheme);
     this.currentTheme = newTheme;
     this.themedElement.className = newTheme;
   }
@@ -47,6 +46,8 @@ export class ConnectComponent implements OnInit {
     
     this.themedElement = document.getElementById("css-theme-control");
 
+    let assignedByDate = false;
+
     /***** Theme Months *****/
     if(currentMonth == 0)
     {
@@ -54,6 +55,7 @@ export class ConnectComponent implements OnInit {
         {
             /* New Years */
             this.setTheme("monochrome_light");
+            assignedByDate = true;
         }
     }
     else if(currentMonth == 1)
@@ -62,12 +64,14 @@ export class ConnectComponent implements OnInit {
         {
             /* Valentine's Day */
             this.setTheme("valentine");
+            assignedByDate = true;
         }
     }
     else if(currentMonth == 5)
     {
         /* LGBT Pride */
         this.setTheme("pride");
+        assignedByDate = true;
     }
     else if(currentMonth == 6)
     {
@@ -75,12 +79,14 @@ export class ConnectComponent implements OnInit {
         {
             /* Independence Day */
             this.setTheme("independence");
+            assignedByDate = true;
         }
     }
     else if(currentMonth == 9)
     {
         /* Halloween */
         this.setTheme("halloween");
+        assignedByDate = true;
     }
     else if(currentMonth==11)
     {
@@ -88,14 +94,16 @@ export class ConnectComponent implements OnInit {
         {
             /* Christmas */
             this.setTheme("christmas");
+            assignedByDate = true;
         }
         else if(currentDate == 31)
         {
             /* New Years */
             this.setTheme("monochrome_light");
+            assignedByDate = true;
         }
     }
-    else {
+    if(assignedByDate != true) {
       /* Default */
       this.setTheme(this.defaultTheme);
     }
@@ -103,7 +111,7 @@ export class ConnectComponent implements OnInit {
 
   public nextTheme()
   {
-    console.log("Thank you next");
+    console.log("Next Theme");
     let currentIndex = this.themes.indexOf(this.currentTheme);
 
     if( currentIndex < this.themes.length-1 )
