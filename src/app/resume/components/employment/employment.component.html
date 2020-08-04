@@ -3,7 +3,7 @@
       <mat-card-title>
           <span class="company">{{job.employer}}</span>&nbsp;
           <span class="jobTitle">{{job.jobTitle}}</span> <br/>
-          <span class="dateRange">{{job.startDate}} - {{job.endDate}}</span> | <span class="location">{{job.location}}</span>
+          <span class="dateRange">{{job.startDate}} - <span *ngIf="job.endDate; else pastEmployer">{{job.endDate}}</span><ng-template #pastEmployer>Current</ng-template></span> | <span class="location">{{job.location}}</span>
       </mat-card-title>
       <mat-card-content>
         <mat-list>
