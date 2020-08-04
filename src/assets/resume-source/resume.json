@@ -15,7 +15,7 @@
             },
             "degree": "Computer Science B.S. & Computational Biology B.S.",
             "minor": "Mathematics",
-            "gpa": 3.09,
+            "gpa": 3.14,
             "location": {
                 "city": "Tallahassee",
                 "zipCode": null,
@@ -41,7 +41,7 @@
                 "Theory of Computation",
                 "Software Engineering"
             ],
-            "graduated": null,
+            "graduated": true,
             "important": true
         },
         {
@@ -65,7 +65,8 @@
                 "country": null
             },
             "courses": null,
-            "graduated": "With Highest Honors",
+            "graduated": true,
+            "graduatedWith": "With Highest Honors",
             "important": false
         }
     ],

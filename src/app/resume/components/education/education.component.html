@@ -11,8 +11,8 @@
         <div *ngIf="education.graduated; then graduated; else notGraduated"></div>
 
         <ng-template #graduated>
-                    <span><u>Cumulative GPA</u>: {{education.gpa}} of 4.0 </span><br/>
-                    <span>Graduated {{education.endDate}} {{education.graduated}}</span>
+            <span><u>Cumulative GPA</u>: {{education.gpa}} of 4.0 </span><br/>
+            <span><u>Graduated</u>: {{education.endDate}} {{education.graduatedWith}}</span>
         </ng-template>
 
         <ng-container *ngIf="education.courses">
