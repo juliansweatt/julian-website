@@ -72,6 +72,22 @@
     ],
     "employment":[
         {
+            "employer": "Amazon",
+            "startDate": {
+                "month": 3,
+                "day": 0,
+                "year": 2020
+            },
+            "jobTitle": "Software Engineer",
+            "location": {
+                "city": "Seattle",
+                "zipCode": null,
+                "state": "WA",
+                "country": null
+            },
+            "important": true
+        },
+        {
             "employer": "Citigroup",
             "startDate": {
                 "month": 6,
