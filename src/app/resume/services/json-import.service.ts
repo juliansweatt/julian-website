@@ -34,7 +34,8 @@ interface JsonEducation {
 		country: string;
 	};
 	courses: Array<string>;
-	graduated: string;
+	graduated: boolean;
+	graduatedWith: string;
 	important: boolean;
 }
 

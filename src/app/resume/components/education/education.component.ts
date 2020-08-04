@@ -13,10 +13,11 @@ class education
   gpa: number;
   location: location;
   courses: Array<string>;
-  graduated: string;
+  graduated: boolean;
+  graduatedWith: string;
   important: boolean;
 
-  constructor(institution: string, startDate: date, endDate: date, degree: string, minor:string = null, gpa: number, location: location, courses: Array<string> = null, graduated: string = null, important: boolean = true)
+  constructor(institution: string, startDate: date, endDate: date, degree: string, minor:string = null, gpa: number, location: location, courses: Array<string> = null, graduated: boolean = true, graduatedWith: string = "", important: boolean = true)
   {
     this.institution = institution;
     this.startDate = startDate;
@@ -27,6 +28,7 @@ class education
     this.location = location;
     this.courses = courses;
     this.graduated = graduated;
+    this.graduatedWith = graduatedWith
     this.important = important;
   }
 }
@@ -53,7 +55,7 @@ export class EducationComponent implements OnInit {
           let institutionLocation = new location(educationInstance.location.city, educationInstance.location.zipCode, educationInstance.location.state, educationInstance.location.country);
           
           // Push to Display
-          this.educationHistory.push(new education(educationInstance.institution, startDate, endDate, educationInstance.degree, educationInstance.minor, educationInstance.gpa, institutionLocation, educationInstance.courses, educationInstance.graduated, educationInstance.important));
+          this.educationHistory.push(new education(educationInstance.institution, startDate, endDate, educationInstance.degree, educationInstance.minor, educationInstance.gpa, institutionLocation, educationInstance.courses, educationInstance.graduated, educationInstance.graduatedWith, educationInstance.important));
         }
       }
     })

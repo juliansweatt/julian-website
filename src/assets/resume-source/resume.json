@@ -15,7 +15,7 @@
             },
             "degree": "Computer Science B.S. & Computational Biology B.S.",
             "minor": "Mathematics",
-            "gpa": 3.09,
+            "gpa": 3.14,
             "location": {
                 "city": "Tallahassee",
                 "zipCode": null,
@@ -41,7 +41,7 @@
                 "Theory of Computation",
                 "Software Engineering"
             ],
-            "graduated": null,
+            "graduated": true,
             "important": true
         },
         {
@@ -65,11 +65,28 @@
                 "country": null
             },
             "courses": null,
-            "graduated": "With Highest Honors",
+            "graduated": true,
+            "graduatedWith": "With Highest Honors",
             "important": false
         }
     ],
     "employment":[
+        {
+            "employer": "Amazon",
+            "startDate": {
+                "month": 3,
+                "day": 0,
+                "year": 2020
+            },
+            "jobTitle": "Software Engineer",
+            "location": {
+                "city": "Seattle",
+                "zipCode": null,
+                "state": "WA",
+                "country": null
+            },
+            "important": true
+        },
         {
             "employer": "Citigroup",
             "startDate": {

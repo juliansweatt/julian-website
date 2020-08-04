@@ -43,7 +43,14 @@ export class EmploymentComponent implements OnInit {
         {
           // Transform Object(s)
           let startDate = new date(employmentInstance.startDate.month, employmentInstance.startDate.day, employmentInstance.startDate.year);
-          let endDate = new date(employmentInstance.endDate.month, employmentInstance.endDate.day, employmentInstance.endDate.year);
+          let endDate:any 
+          
+          if(employmentInstance.endDate){
+            endDate = new date(employmentInstance.endDate.month, employmentInstance.endDate.day, employmentInstance.endDate.year);
+          } else {
+            endDate = null
+          }
+
           let businessLocation = new location(employmentInstance.location.city, employmentInstance.location.zipCode, employmentInstance.location.state, employmentInstance.location.country);
 
           // Push to Display
