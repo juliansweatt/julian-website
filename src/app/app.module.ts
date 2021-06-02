@@ -37,9 +37,7 @@ const appRoutes: Routes = [
     HeaderBarComponent
   ],
   imports: [
-    RouterModule.forRoot(
-      appRoutes,
-    ),
+    RouterModule.forRoot(appRoutes, { relativeLinkResolution: 'legacy' }),
     BrowserModule,
     BrowserAnimationsModule,
     MatIconModule,
