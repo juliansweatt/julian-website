@@ -1,20 +1,20 @@
 <span [class]="currentTheme">
-  <span *ngIf="ready; else loading">  
-      <mat-card class="mainCard" [ngClass]="{'dark':isDark}">
-        <mat-card-title>
-          Education
-        </mat-card-title>
-        <mat-card-content>
-          <app-education>Loading Education</app-education>
-        </mat-card-content>
-      </mat-card>
-      
+  <span *ngIf="ready; else loading">        
       <mat-card class="mainCard" [ngClass]="{'dark':isDark}">
         <mat-card-title>
           Employment
         </mat-card-title>
         <mat-card-content>
           <app-employment>Loading Employment</app-employment>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="mainCard" [ngClass]="{'dark':isDark}">
+        <mat-card-title>
+          Education
+        </mat-card-title>
+        <mat-card-content>
+          <app-education>Loading Education</app-education>
         </mat-card-content>
       </mat-card>
   
